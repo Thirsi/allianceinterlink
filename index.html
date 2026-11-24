@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get the app</title>
+  <script>
+    const ua = navigator.userAgent || "";
+    const IOS = "https://apps.apple.com/us/app/alliance-interlink-taxis/id6448278982";
+    const ANDROID = " https://play.google.com/store/apps/details?id=com.allianceinterlink.passengerapp";
+    if (/android/i.test(ua)) location.replace(ANDROID);
+    else if (/iPhone|iPad|iPod/i.test(ua)) location.replace(IOS);
+  </script>
+</head>
+<body>
+  <!-- Desktop visitors or anyone the script didn't redirect see these -->
+  <h1>Get the app</h1>
+  <p><a href="https://apps.apple.com/us/app/alliance-interlink-taxis/id6448278982">Download on the App Store</a></p>
+  <p><a href=" https://play.google.com/store/apps/details?id=com.allianceinterlink.passengerapp">Get it on Google Play</a></p>
+</body>
+</html>
